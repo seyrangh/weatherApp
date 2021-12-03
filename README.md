@@ -32,4 +32,14 @@ In WeatherApp.js
  
  Also the default location on app load is Toronto, but than can also be chanegd in WeatherApp.js
  weather.fetchWeather("Toronto"); 
- 
+
+
+fetch
+            (
+                "https://api.openweathermap.org/data/2.5/weather?q="
+                +city
+                + "&units=metric&appid=" 
+                + this.apiKey
+            )
+            The URL can be changed as well based on the data you would like to display. All the options will be displayed on https://openweathermap.org/
+Data can also be fetched from a downlaoded JSON or XML file. more info on that would be on the website as well. 
